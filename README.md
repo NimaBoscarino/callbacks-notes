@@ -2,6 +2,8 @@
 
 # Callbacks
 
+## GIT REPO WITH CODE: https://github.com/NimaBoscarino/callbacks-notes
+
 Hey everyone! Thanks for sitting through today's lecture 😊
 
 Today we talked about using callbacks! The basic idea was that we can pass functions around without invoking them, so that "higher order functions" can use them as they please. We used this concept to make functions that are *generic*. Now... the notes that I have here are all the bits and pieces of code that we wrote during lecture. However, if you want some good solid definitions I really recommend taking a look at Joel's excellent notes: https://web.compass.lighthouselabs.ca/activities/185/lectures/1716
