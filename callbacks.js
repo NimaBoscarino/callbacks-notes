@@ -22,3 +22,31 @@ function forEach (array, action) {
 
 logEach([1, 2, 3, 4])
 forEach([1, 2, 3, 4], console.log)
+
+
+
+// HIGHER ORDER FUNCTION
+function goToKitchen(andWhileYoureThere) {
+  // walk down the hall
+  // take a left
+  // keep walking
+  // take a right
+  console.log("Made it to the kitchen!")
+  andWhileYoureThere()
+}
+
+function getWater() {
+  // take another right
+  // get cup
+  //....
+  // return with cup
+  console.log("Mmm water")
+}
+
+function getCoffee() {
+  // whole other ball game
+  console.log("Insert coffee joke here")
+}
+
+goToKitchen(getWater)
+goToKitchen(getCoffee)
