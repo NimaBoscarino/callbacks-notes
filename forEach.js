@@ -1,34 +1,31 @@
-var names = ['Simon', 'Pierre', 'Brenda', 'Hamid']
+const person = 'Bradlina'
 
-function forEveryPerson(callback) {
-  for (var i = 0; i < names.length; i++) {
-    var name = names[i] // e.g. Simon
-  
-    callback(name)
-
-  }
+const announcePerson = function (name) {
+    console.log('🎺🎺🎺🎺🎺')
+    console.log('Announcing ' + name + ', the Magnificent!')
 }
 
-function sayHello(name) {
-  console.log("Hey " + name + "!")
+const leavingPerson = function (name) {
+    console.log('🎺🎺🎺🎺🎺')
+    console.log('You had been graced with the presence of ' + name + ', the Magnificent!')
 }
 
-forEveryPerson(sayHello)
+const people = ['Bradlina', 'Kristoferetta', 'Jamiestofino', 'Bob']
 
-// inline anonymous function as a callback
-
-forEveryPerson(function (name) {
-	console.log('Hey ' + name + ', how you doing?')
-})
-
-function forEach(array, callback) {
-  for (var i = 0; i < array.length; i++) {
-    var thing = array[i] // e.g. Simon
-  
-    callback(thing)
-  }
+// takes a function, and then calls it (callback)
+// Higher order function
+const forEach = function (array, cb) {
+    for (let i = 0; i < array.length; i++) {
+        let elem = array[i]
+        cb(elem)
+    }
 }
 
-forEach([1, 2, 3], function (number) {
-  console.log(number + 5)
-})
+forEach(people, announcePerson)
+forEach(people, leavingPerson)
+
+const mult100 = function (thing) {
+    console.log(thing * 100)
+}
+
+forEach([1, 2, 3, 4], mult100)
